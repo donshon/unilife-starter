@@ -1,0 +1,13 @@
+.info-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 360px;
+    height: 238.5px;
+    text-align: center;
+}
+
+.info-box-container p {
+    color: #383838;
+}

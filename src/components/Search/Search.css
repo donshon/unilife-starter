@@ -1,0 +1,29 @@
+.search-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 67.22%;
+    height: 128px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+    margin-top: -64px;
+    z-index: 0;
+}
+
+select {
+    width: 33.06%;
+    height: 37.5%;
+    background: #FFFFFF;
+    border: 1px solid #CED3D8;
+    border-radius: 12px;
+}
+
+button {
+    width: 20.66%;
+    height: 37.5%;
+    color: white;
+    background: #3A5295;
+    border-radius: 12px;
+    font-size: 15pt;
+}

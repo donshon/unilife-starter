@@ -3,4 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 20pt;
+    color: white;
+}
+
+.cover-overlay {
+    background: rgb(0,0,0); /* this is fallback color for older browsers*/
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 420px;
+    width: 100%;
+    /* height and width based on parent */
+}
+
+h1, p {
+    z-index: 0;
 }

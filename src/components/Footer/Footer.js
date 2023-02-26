@@ -12,7 +12,7 @@ function Footer() {
           
           <div className="newletter-input">
             <h2>Keep in touch</h2>
-            <p>Curious about new offerings? Sign up for our weekly newletter and stay informed.</p>
+            <p>Curious about new offerings? Sign up for our weekly newsletter and stay informed.</p>
             <input type="text" placeholder="Your email"/>
           </div>
           
