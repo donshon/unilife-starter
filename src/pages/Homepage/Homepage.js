@@ -11,6 +11,7 @@ import hand from '../../assets/hand_home.png';
 import heart from '../../assets/heart.png';
 import axios from 'axios'
 import CityCard from './../../components/CityCard/CityCard';
+import { Link } from 'react-router-dom';
 
 function Homepage() {
   //state for array of cities
@@ -33,21 +34,26 @@ function Homepage() {
   return (
     <div className="homepage-container">
         <Cover headline="Find student homes with bills included" text="A simple and faster way to search for student accomodation"/>
+        
         <Search />
+        
         <div className="city-container">
           <h2>Student accomodations in our top cities</h2>
           <div className="city-cards">
             {
               cities.map(city => <CityCard 
-                //key={city.id}
+                key={city.id}
                 img={city.image_url}
                 name={city.name}
                 property={city.property_count}
               />)
             }
           </div>
-          <button>See All Cities</button>
+          <Link to={'/cities'}>
+            <button>See All Cities</button>
+          </Link>
         </div>
+        
         <div className="info-container">
           <h2>Compare all inclusive student homes.</h2>
           <div className="info-boxes">
@@ -56,6 +62,7 @@ function Homepage() {
             <InfoBox img={billImg} title="Bills Included" text="Bills are included in all rent prices. No hidden fees."/>
           </div>
         </div>
+        
         <div className="homepage-other">
           <div className="other-left">
             <div className="other-box">
@@ -76,6 +83,7 @@ function Homepage() {
           </div>
           <img src={person}/>
         </div>
+        
     </div>
   )
 }

@@ -15,6 +15,7 @@ function CityCard({img, name, property}) {
 
   return (
     <div className="city-card-container" style={cardStyle}>
+        <div className="card-overlay"></div>
         <h1>{name}</h1>
         <p>{property} Properties</p>
     </div>
