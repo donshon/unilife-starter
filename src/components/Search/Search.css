@@ -17,6 +17,8 @@ select {
     background: #FFFFFF;
     border: 1px solid #CED3D8;
     border-radius: 12px;
+    font-size: 1.5em;
+    padding: 10px;
 }
 
 button {

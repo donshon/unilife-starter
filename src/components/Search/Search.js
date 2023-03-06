@@ -5,7 +5,8 @@ function Search() {
   return (
     <div className="search-container">
       <select className="city">
-        <option value=""></option>
+        <option disabled selected>Select your option</option>
+        
       </select>
       <select className="bedroom">
         <option value=""></option>

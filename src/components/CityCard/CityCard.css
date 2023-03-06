@@ -13,6 +13,10 @@
     margin: 20px;
 }
 
+.city-card-container h1, p {
+    width: auto;
+}
+
 .card-overlay {
     background: rgb(0,0,0); /* this is fallback color for older browsers*/
     background: rgba(0, 0, 0, 0.5);

@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Homepage from './pages/Homepage/Homepage';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Citypage from './pages/Citypage/Citypage';
+import CityDetailsPage from './pages/CityDetailsPage/CityDetailsPage';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />}/>
         <Route path="/cities" element={<Citypage />}/>
+        <Route path="/details/:id" element={<CityDetailsPage />}/>
       </Routes>
 
       <Footer/>

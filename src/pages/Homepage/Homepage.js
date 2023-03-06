@@ -20,7 +20,7 @@ function Homepage() {
   //api call to get cities https://unilife-server.herokuapp.com/cities?
   useEffect(
     ()=>{
-        axios.get("https://unilife-server.herokuapp.com/cities?")
+        axios.get("https://unilife-server.herokuapp.com/cities")
         .then( res => {
             console.log(res.data.response)
             //store data in state
@@ -43,9 +43,7 @@ function Homepage() {
             {
               cities.map(city => <CityCard 
                 key={city.id}
-                img={city.image_url}
-                name={city.name}
-                property={city.property_count}
+                city={city}
               />)
             }
           </div>
@@ -83,7 +81,7 @@ function Homepage() {
           </div>
           <img src={person}/>
         </div>
-        
+
     </div>
   )
 }

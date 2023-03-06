@@ -1,11 +1,11 @@
 import React from 'react'
 import './CityCard.css'
 
-function CityCard({img, name, property}) {
+function CityCard({city}) {
     const cardStyle = {
         height: "300px",
         width: "400px",
-        backgroundImage: `url("${img}")`,
+        backgroundImage: `url("${city.image_url}")`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -16,8 +16,8 @@ function CityCard({img, name, property}) {
   return (
     <div className="city-card-container" style={cardStyle}>
         <div className="card-overlay"></div>
-        <h1>{name}</h1>
-        <p>{property} Properties</p>
+        <h1>{city.name}</h1>
+        <p>{city.property_count} Properties</p>
     </div>
   )
 }
