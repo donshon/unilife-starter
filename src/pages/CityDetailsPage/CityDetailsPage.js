@@ -28,7 +28,7 @@ function CityDetailsPage() {
             axios.get(`https://unilife-server.herokuapp.com/properties/city/${id}`)
             .then(res => {
                 console.log(res.data.response)
-                setProperties(res.data.response.slice(1, res.data.response.length-1))
+                setProperties(res.data.response)
                 console.log(properties)
             })
             .catch(err => console.log(err))
@@ -38,6 +38,34 @@ function CityDetailsPage() {
   return (
     <div className="city-details-container">
         <Cover headline="Search Accomodation" text="Whatever you're after, we can help you find the right student accommodation for you."/>
+        <div className="filter-container">
+            <div className="select-container">
+                <h3>Min Bedroom</h3>
+                <select>
+                    <option disabled selected>Select your option</option>
+                    
+                </select>
+            </div>
+            <div className="select-container">
+                <h3>Min Bathroom</h3>
+                <select>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div className="select-container">
+                <h3>Max Price</h3>
+                <select>
+                    <option disabled selected>Select your option</option> 
+                </select>
+            </div>
+            <div className="select-container">
+                <h3>Home Type</h3>
+                <select>
+                    <option disabled selected>Select your option</option>
+                </select>
+            </div>
+        </div>
+        
         <div className="properties-container">
             <h2>{city?.property_count} homes in {city?.name}</h2>
             <div className="properties">
@@ -48,6 +76,7 @@ function CityDetailsPage() {
                 }
             </div>
         </div>
+        
         <div className="info-container">
             <div className="info-box">
                 <div className="info-text">

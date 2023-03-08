@@ -19,6 +19,10 @@ button  {
     height: 88px;
     margin: 20px;
     cursor: pointer;
+    color: white;
+    background: #3A5295;
+    border-radius: 12px;
+    font-size: 15pt;
 }
 
 button:hover {

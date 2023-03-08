@@ -5,10 +5,82 @@
     height: 500px;
     border: 1px solid #CED3D8;
     border-radius: 24px;
+    margin: 20px
 }
 
 .property-container img {
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
     width: 100%;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16%;
+    background: #3A5295;
+    color: white;
+    padding: 0 20px;
+}
+
+.prices img {
+    width: 25.33px;
+}
+
+.bed-shower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.bed-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 22.4%;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.address img {
+    width: 15.5px;
+    margin-right: 5px;
+}
+
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9.6%;
+    border: 1px solid #CED3D8;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.view img {
+    width: 15px;
+    margin-right: 20px;
 }

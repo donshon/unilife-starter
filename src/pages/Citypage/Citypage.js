@@ -12,7 +12,7 @@ function Citypage() {
       ()=>{
           axios.get("https://unilife-server.herokuapp.com/cities")
           .then( res => {
-              console.log(res.data.response)
+              //console.log(res.data.response)
               //store data in state
               setCities(res.data.response)
           })
@@ -29,7 +29,7 @@ function Citypage() {
             <div className="cities">
                 {
                   cities.map( item => 
-                  <Link to={`/details/${item._id}`}>
+                  <Link key={item._id} to={`/details/${item._id}`}>
                     <button>{item.name}</button>
                   </Link>
                   )

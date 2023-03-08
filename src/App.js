@@ -6,6 +6,7 @@ import Homepage from './pages/Homepage/Homepage';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Citypage from './pages/Citypage/Citypage';
 import CityDetailsPage from './pages/CityDetailsPage/CityDetailsPage';
+import HomeDetailPage from './pages/HomeDetailPage/HomeDetailPage';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Homepage />}/>
         <Route path="/cities" element={<Citypage />}/>
         <Route path="/details/:id" element={<CityDetailsPage />}/>
+        <Route path="/properties/:id" element={<HomeDetailPage />}/>
       </Routes>
 
       <Footer/>
