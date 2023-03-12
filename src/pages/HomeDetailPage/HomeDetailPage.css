@@ -1,0 +1,41 @@
+.home-container {
+    display: grid;
+}
+
+.nav {
+    width: 150px;
+}
+
+.nav a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    line-height: 32px;
+}
+
+.desc p {
+    text-align: left;
+}
+
+.key-features {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    line-height: 32px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+}
+.feature img {
+    height: 14.87px;
+    margin-right: 15px;
+}

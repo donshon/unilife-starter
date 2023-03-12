@@ -32,6 +32,10 @@
     align-items: center;
 }
 
+.city-cards a {
+    text-decoration: none;
+}
+
 .info-container {
     display: flex;
     flex-direction: column;

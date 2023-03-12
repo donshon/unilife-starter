@@ -1,0 +1,27 @@
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    height: 570px;
+}
+
+.main-photo {
+    margin-bottom: 8px;
+}
+
+.main-photo img {
+    border-radius: 24px;
+    width: 100%;
+}
+
+.three-photos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.three-photos img {
+    border-radius: 12px;
+    width: 31.61%;
+}

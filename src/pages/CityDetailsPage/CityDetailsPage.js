@@ -16,7 +16,7 @@ function CityDetailsPage() {
 
     useEffect(
         () => {
-            //call api get info on this character
+            //call api get info on city
             axios.get(`https://unilife-server.herokuapp.com/cities/${id}`)
             .then(res => {
                 //console.log(res.data.data[0])
@@ -27,9 +27,9 @@ function CityDetailsPage() {
             //call api for list of properties
             axios.get(`https://unilife-server.herokuapp.com/properties/city/${id}`)
             .then(res => {
-                console.log(res.data.response)
+                //console.log(res.data.response)
                 setProperties(res.data.response)
-                console.log(properties)
+                //console.log(properties)
             })
             .catch(err => console.log(err))
         }, []

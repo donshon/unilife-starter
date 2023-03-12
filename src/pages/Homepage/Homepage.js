@@ -22,7 +22,7 @@ function Homepage() {
     ()=>{
         axios.get("https://unilife-server.herokuapp.com/cities")
         .then( res => {
-            console.log(res.data.response)
+            //console.log(res.data.response)
             //store data in state
             setCities(res.data.response.slice(0,9))
         })
@@ -41,10 +41,13 @@ function Homepage() {
           <h2>Student accomodations in our top cities</h2>
           <div className="city-cards">
             {
-              cities.map(city => <CityCard 
-                key={city.id}
-                city={city}
-              />)
+              cities.map(city => 
+              <Link key= {city._id} to={`/details/${city._id}`}>
+                <CityCard 
+                  city= {city}
+                />
+                </Link>
+              )
             }
           </div>
           <Link to={'/cities'}>
