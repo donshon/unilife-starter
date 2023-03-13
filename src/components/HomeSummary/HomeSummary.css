@@ -1,0 +1,90 @@
+.summary-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 570px;
+    width: 620px;
+    font-size: 1.1em;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 484px;
+    width: 620px;
+    border: 1px solid #CED3D8;
+    border-radius: 24px;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 75%;
+}
+
+.address h1 {
+    width: 100%;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 69%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 33.33%;
+    align-items: center;
+    justify-content: center;
+}
+
+.box h4 {
+    margin-bottom: 20%;
+}
+
+.box p {
+    font-size: 150%;
+    font-weight: bold;
+    color: #3A5295;
+}
+
+.sub-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttons button {
+    height: 48px;
+    width: 298px;
+    border-radius: 12px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.shortlist-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #CED3D8;
+}
+
+.shortlist-btn img {
+    width: 19px;
+    margin-right: 10px;
+}

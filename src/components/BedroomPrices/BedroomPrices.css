@@ -1,0 +1,10 @@
+.price-container {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+}
+
+.prices {
+    border: 1px solid #CED3D8;
+    border-radius: 24px;
+}
