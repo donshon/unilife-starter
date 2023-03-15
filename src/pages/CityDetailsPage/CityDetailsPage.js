@@ -42,27 +42,27 @@ function CityDetailsPage() {
             <div className="select-container">
                 <h3>Min Bedroom</h3>
                 <select>
-                    <option disabled selected>Select your option</option>
+                    <option disabled selected>Any bedrooms</option>
                     
                 </select>
             </div>
             <div className="select-container">
                 <h3>Min Bathroom</h3>
                 <select>
-                    <option disabled selected>Select your option</option>
+                    <option disabled selected>Any bathrooms</option>
                     <option value=""></option>
                 </select>
             </div>
             <div className="select-container">
                 <h3>Max Price</h3>
                 <select>
-                    <option disabled selected>Select your option</option> 
+                    <option disabled selected>Any price</option> 
                 </select>
             </div>
             <div className="select-container">
                 <h3>Home Type</h3>
                 <select>
-                    <option disabled selected>Select your option</option>
+                    <option disabled selected>Any home</option>
                 </select>
             </div>
         </div>

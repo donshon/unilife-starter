@@ -7,6 +7,7 @@
 
 .filter-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 88.82%;
@@ -60,6 +61,7 @@ select {
 
 .info-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 88.89%;
@@ -80,4 +82,23 @@ select {
 .info-text p {
     line-height: 32px;
     text-align: left;
+}
+
+/*TABLET*/
+@media (max-width: 768px) {
+    .select-container h3 {
+        display: none;
+    }
+
+    .select {
+        font-size: 1.1em;
+    }
+
+    .info-box {
+        height: auto;
+    }
+
+    .info-box img {
+        width: 93.33%;
+    }
 }

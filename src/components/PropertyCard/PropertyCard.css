@@ -84,3 +84,11 @@
     width: 15px;
     margin-right: 20px;
 }
+
+/*TABLET*/
+@media (max-width: 768px) {
+    .property-container {
+        height: 440px;
+        width: 43%;
+    }
+}
