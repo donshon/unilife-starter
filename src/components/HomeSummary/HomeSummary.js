@@ -18,31 +18,31 @@ function HomeSummary({home}) {
                 <h4>Bedrooms</h4>
                 <div className="sub-box">
                   <img src={bed}/>
-                  <p>{home.bedroom_count}</p>
+                  <p>{home?.bedroom_count}</p>
                 </div>
               </div>
               <div className="box">
                 <h4>Bathrooms</h4>
                 <div className="sub-box">
                   <img src={shower}/>
-                  <p>{home.bathroom_count}</p>
+                  <p>{home?.bathroom_count}</p>
                 </div>
               </div>
               <div className="box">
                 <h4>Property Type</h4>
-                <p>{home.property_type}</p>
+                <p>{home?.property_type}</p>
               </div>
               <div className="box">
                 <h4>Price</h4>
-                <p>${home.rent} USD</p>
+                <p>${home?.rent} USD</p>
               </div>
               <div className="box">
                 <h4>Furnished Type</h4>
-                <p>{home.furnished}</p>
+                <p>{home?.furnished}</p>
               </div>
               <div className="box">
                 <h4>Available From</h4>
-                <p>{home.availability}</p>
+                <p>{home?.availability}</p>
               </div>
             </div>
         </div>

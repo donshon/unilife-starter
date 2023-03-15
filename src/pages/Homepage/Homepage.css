@@ -109,3 +109,22 @@
 .other-box-text p {
     color: #383838;
 }
+
+/*TABLET*/
+@media (max-width: 768px) {
+    .info-container {
+        height: 1036px;
+    }
+
+    .info-boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*PHONE*/
+@media (max-width: 428px) {
+
+}

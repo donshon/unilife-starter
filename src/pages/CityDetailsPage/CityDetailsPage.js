@@ -49,6 +49,7 @@ function CityDetailsPage() {
             <div className="select-container">
                 <h3>Min Bathroom</h3>
                 <select>
+                    <option disabled selected>Select your option</option>
                     <option value=""></option>
                 </select>
             </div>

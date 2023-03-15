@@ -9,6 +9,7 @@ function Search() {
         
       </select>
       <select className="bedroom">
+        <option disabled selected>Select your option</option>
         <option value=""></option>
       </select>
       <button className="find-homes">Find Homes</button>

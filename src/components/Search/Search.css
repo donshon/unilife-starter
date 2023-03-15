@@ -11,7 +11,7 @@
     z-index: 0;
 }
 
-select {
+.city, .bedroom {
     width: 33.06%;
     height: 37.5%;
     background: #FFFFFF;

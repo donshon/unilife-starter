@@ -26,3 +26,16 @@
     /* height and width based on parent */
     border-radius: 24px;
 }
+
+/*TABLET*/
+@media (max-width: 768px) {
+    .city-card-container {
+        height: 225px;
+        width: 300px;
+    }
+}
+
+/*PHONE*/
+@media (max-width: 768px) {
+
+}

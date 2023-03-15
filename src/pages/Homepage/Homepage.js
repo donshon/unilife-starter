@@ -42,7 +42,7 @@ function Homepage() {
           <div className="city-cards">
             {
               cities.map(city => 
-              <Link key= {city._id} to={`/details/${city._id}`}>
+              <Link key= {city?._id} to={`/details/${city?._id}`}>
                 <CityCard 
                   city= {city}
                 />

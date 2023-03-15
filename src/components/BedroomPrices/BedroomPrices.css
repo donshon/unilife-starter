@@ -4,7 +4,22 @@
     width: 620px;
 }
 
-.prices {
+.price-container h2 {
+    margin-bottom: 20px;
+}
+
+.price {
     border: 1px solid #CED3D8;
+    border-radius: 24px;
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+    height: 64px;
+    padding: 0 20px;
+    border-bottom: 1px solid #CED3D8;
     border-radius: 24px;
 }
