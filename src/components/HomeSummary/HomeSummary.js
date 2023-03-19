@@ -4,10 +4,23 @@ import divider from '../../assets/Rectangle_34.png'
 import heart from '../../assets/heart.png'
 import bed from '../../assets/blue_bed.png'
 import shower from '../../assets/blue_shower.png'
+import BookViewModal from './../BookViewModal/BookViewModal';
+
 
 function HomeSummary({home}) {
+  const [bookModal, setBookModal] = useState(false)
+
+  const handleBook = () => {
+    setBookModal(true)
+  }
+
+  const handleClose = () => {
+    setBookModal(false)
+  }
+
   return (
     <div className="summary-container">
+      <BookViewModal show={bookModal} address={home} handleClose={handleClose}/>
         <div className="summary">
             <div className="address">
                 <h1>{home?.address.street}, {home?.address.city}, {home?.address.postcode}</h1>
@@ -48,7 +61,7 @@ function HomeSummary({home}) {
         </div>
         <div className="buttons">
             <button className="shortlist-btn"><img src={heart}/>Shortlist</button>
-            <button className="booking-btn">Book Viewing</button>
+            <button className="booking-btn" onClick={handleBook}>Book Viewing</button>
         </div>
     </div>
   )

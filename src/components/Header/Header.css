@@ -21,6 +21,11 @@
     justify-content: space-between;
     align-items: center;
     width: 160px;
+    color: white;
+}
+
+.logo a {
+    color: white;
 }
 
 .header-links {

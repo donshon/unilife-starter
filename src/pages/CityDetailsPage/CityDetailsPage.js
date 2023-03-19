@@ -32,6 +32,7 @@ function CityDetailsPage() {
                 //console.log(properties)
             })
             .catch(err => console.log(err))
+            //eslint-disable-next-line
         }, []
     )
 
@@ -87,7 +88,7 @@ function CityDetailsPage() {
                     <br/>
                     <p>{city?.universities}</p>
                 </div>
-                <img src={studentImg}/>
+                <img src={studentImg} alt={`Student in ${city?.name}`}/>
             </div>
         </div>
     </div>

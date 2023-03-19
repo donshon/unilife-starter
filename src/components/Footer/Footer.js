@@ -35,9 +35,9 @@ function Footer() {
         
         <div className="footer">
             <div className="footer-stuff">
-              <a>About Us</a>
-              <a>Terms & Conditions</a>
-              <a>Privacy & Cookie Policies</a>
+              <a href="#">About Us</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy & Cookie Policies</a>
             </div>
             <div className="footer-year">
               <p>2023</p>
