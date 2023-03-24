@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './HomeSummary.css'
 import divider from '../../assets/Rectangle_34.png'
 import heart from '../../assets/heart.png'
@@ -20,7 +20,7 @@ function HomeSummary({home}) {
 
   return (
     <div className="summary-container">
-      <BookViewModal show={bookModal} address={home} handleClose={handleClose}/>
+      
         <div className="summary">
             <div className="address">
                 <h1>{home?.address.street}, {home?.address.city}, {home?.address.postcode}</h1>
@@ -30,14 +30,14 @@ function HomeSummary({home}) {
               <div className="box">
                 <h4>Bedrooms</h4>
                 <div className="sub-box">
-                  <img src={bed}/>
+                  <img src={bed} alt="image1"/>
                   <p>{home?.bedroom_count}</p>
                 </div>
               </div>
               <div className="box">
                 <h4>Bathrooms</h4>
                 <div className="sub-box">
-                  <img src={shower}/>
+                  <img src={shower} alt="image2"/>
                   <p>{home?.bathroom_count}</p>
                 </div>
               </div>
@@ -63,6 +63,7 @@ function HomeSummary({home}) {
             <button className="shortlist-btn"><img src={heart}/>Shortlist</button>
             <button className="booking-btn" onClick={handleBook}>Book Viewing</button>
         </div>
+        <BookViewModal show={bookModal} address={home} handleClose={handleClose}/>
     </div>
   )
 }

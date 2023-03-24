@@ -23,6 +23,7 @@ function HomeDetailPage() {
         setHome(res.data)
       })
       .catch(err => console.log(err))
+      //eslint-disable-next-line
     }, []
   )
 
@@ -31,7 +32,7 @@ function HomeDetailPage() {
     <div className="home-container">
         <div className="nav">
           <Link to={`/details/${home?.city_id._id}`}>
-            <img src={arrow}/>
+            <img src={arrow} alt="image6"/>
             <p>Back to Search</p>
           </Link>
         </div>
@@ -51,11 +52,11 @@ function HomeDetailPage() {
           <h2>Key Features</h2>
           {
             home?.key_features[0]?
-            home.key_features.map(feature => <div key={feature} className="feature"><img src={checkmark}/><p>{feature}</p></div>)
+            home.key_features.map(feature => <div key={feature} className="feature"><img src={checkmark} alt={feature}/><p>{feature}</p></div>)
             :
             <p>N/A</p>
           }
-        </div>
+        </div> 
     </div>
   )
 }

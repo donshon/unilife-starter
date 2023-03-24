@@ -27,6 +27,7 @@ function Homepage() {
             setCities(res.data.response.slice(0,9))
         })
         .catch(err=>console.log(err))
+        //eslint-disable-next-line
     }, [] //if nothing in [], useEffect only runs once on page loading
   )
 
@@ -67,14 +68,14 @@ function Homepage() {
         <div className="homepage-other">
           <div className="other-left">
             <div className="other-box">
-              <img src={hand}/>
+              <img src={hand} alt="image4"/>
               <div className="other-box-text">
                 <h3>Best Selection</h3>
                 <p>Best selection of student accommodations. Never been easier to find a home that's right for you.</p>
               </div>
             </div>
             <div className="other-box">
-              <img src={heart}/>
+              <img src={heart} alt="image5"/>
               <div className="other-box-text">
                 <h3>Your Favorite</h3>
                 <p>Shortlist your favourite properties and send enquiries in one click.</p>
@@ -82,7 +83,7 @@ function Homepage() {
             </div>
             <button>Search & Compare</button>
           </div>
-          <img src={person}/>
+          <img src={person} alt="image3"/>
         </div>
 
     </div>

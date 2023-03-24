@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className="header-container">
         <div className="logo">
-            <img src={logo}/>
+            <img src={logo} alt="image"/>
             <a href="/">UniLife</a>
         </div>
         <div className="header-links">

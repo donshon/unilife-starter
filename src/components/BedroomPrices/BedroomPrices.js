@@ -34,7 +34,7 @@ function BedroomPrices({home}) {
         <div className="price">
             { 
               bedPrices().map(item => (
-                <div className="price-section">
+                <div className="price-section" key={item?._id}>
                   <p>{item.room}</p>
                   <p>${item.price} per week</p>
                 </div>

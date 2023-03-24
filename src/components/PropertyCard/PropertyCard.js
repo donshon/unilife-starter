@@ -11,7 +11,7 @@ function PropertyCard({property}) {
     <div className="property-container">
         {
           property?.images[0]?
-          <img src={property?.images[0]}/>
+          <img src={property?.images[0]} alt="image"/>
           :
           <p>No Image</p>
         }
@@ -23,11 +23,11 @@ function PropertyCard({property}) {
           </div>
           <div className="bed-shower">
             <div className="bed-box">
-              <img src={bed}/>
+              <img src={bed} alt="image"/>
               <p>{property?.bedroom_count}</p>
             </div>
             <div className="bed-box">
-              <img src={shower}/>
+              <img src={shower} alt="image"/>
               <p>{property?.bathroom_count}</p>
             </div>
           </div>
@@ -39,7 +39,7 @@ function PropertyCard({property}) {
             <h4>{property?.furnished}</h4>
           </div>
           <div className="address">
-            <img src={pin}/>
+            <img src={pin} alt="image"/>
             {
               property?.address?
               <p>{property?.address.street}, {property?.address.city}, {property?.address.postcode}</p>
@@ -51,7 +51,7 @@ function PropertyCard({property}) {
         
         
         <div className="view">
-          <img src={homeIcon}/>
+          <img src={homeIcon} alt="image"/>
           <Link to={`/properties/${property?._id}`}>
           <p>View Home</p>
           </Link>

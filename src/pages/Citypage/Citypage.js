@@ -17,6 +17,7 @@ function Citypage() {
               setCities(res.data.response)
           })
           .catch(err=>console.log(err))
+          //eslint-disable-next-line
       }, []
     )
 

@@ -19,15 +19,15 @@ function Footer() {
           <div className="socials-box">
             <h2>Let's Socialize</h2>
             <div className="s">
-              <img src={facebook}/>
+              <img src={facebook} alt="image"/>
               <p>Facebook</p>
             </div>
             <div className="s">
-              <img src={twitter}/>
+              <img src={twitter} alt="image"/>
               <p>Twitter</p>
             </div>
             <div className="s">
-              <img src={instagram}/>
+              <img src={instagram} alt="image"/>
               <p>Instagram</p>
             </div>
           </div>
